@@ -1,6 +1,6 @@
 #%%
 import numpy as np
-from random import choice,shuffle
+from random import shuffle
 #%%
 with open('wordlist.txt') as f:
     wordlist = [x.strip() for x in f.readlines()]
@@ -44,7 +44,7 @@ len(wordlist)
 
 words = []
 shuffle(wordlist)
-for word in wordlist[:100]:
+for word in wordlist:
     scorelist = []
     shuffle(wordlist)
     for x in wordlist[:100]:
